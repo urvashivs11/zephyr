@@ -137,7 +137,7 @@ resetwait:
 	 * Get the "logic" id defined by cpu_node_list statically for voting lock self-identify.
 	 * It is worth noting that this is NOT the final logic id (arch_curr_cpu()->id)
 	 */
-	get_cpu_logic_id	x1, x2, x3, x4	//x1: MPID, x2: logic id
+	get_cpu_logic_id	x1, x2, x3, x4, x5	//x1: MPID, x2: logic id
 
 	add	x4, x0, #BOOT_PARAM_VOTING_OFFSET
 

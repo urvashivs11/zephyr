@@ -56,6 +56,8 @@ const uint64_t cpu_node_list[] = {
 	DT_FOREACH_CHILD_STATUS_OKAY_SEP(DT_PATH(cpus), DT_REG_ADDR, (,))
 };
 
+const uint64_t cpu_node_list_length = ARRAY_SIZE(cpu_node_list);
+
 /* cpu_map saves the maping of core id and mpid */
 static uint64_t cpu_map[CONFIG_MP_MAX_NUM_CPUS] = {
 	[0 ... (CONFIG_MP_MAX_NUM_CPUS - 1)] = INV_MPID
